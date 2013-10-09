@@ -2,10 +2,14 @@ systemtext,inputNoun,inputAdjective,inputVerb,inputAdverb,inputObject=""
 
 madlib= { "Noun" => "", "Adjective" => "","Verb" => "", "Adverb" => "", "Object" => "" }
 
+systemtext1 = "The (adjective) (noun) suddenly and (adverb) had to (verb) the (object)."
 
+systemtext2 = "You should (verb) a (adjective) (noun) to put it ontop of (object)."
 
+systemtext3 = "How much is that (noun) in the (object)?"
 
-systemtext ="The (adjective) (noun) suddenly and (adverb) had to (verb) the (object)."
+systemArray = [systemtext1, systemtext2, systemtext3]
+
 #Noun
 puts "Please enter a noun or noun phrase:"
 inputNoun = gets.chomp 
@@ -45,7 +49,21 @@ puts madlib
 puts("--- Final sentence -----")
 puts systemtext
 
+for i in 0.. systemArray.length - 1 do 
+	systemArray[i] = systemArray[i].sub("(noun)", madlib["Noun"])
+	systemArray[i] = systemArray[i].sub("(adjective)", madlib["Adjective"])
+	systemArray[i] = systemArray[i].sub("(verb)", madlib["Verb"])
+	systemArray[i] = systemArray[i].sub("(adverb)", madlib["Adverb"])
+	systemArray[i] = systemArray[i].sub("(object)", madlib["Object"])
+	puts systemArray[i] 
+end
 
+
+# if i == 2 
+# 		systemArray[i] = systemArray[i].sub("(noun)", madlib["Noun"])
+# 		systemArray[i] = systemArray[i].upcase
+# 		puts Unicode::capitalize (systemArray[i])
+# 	end
 
  # or you can do it this way.
  # puts "Please enter a noun or noun phrase:"
