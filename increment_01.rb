@@ -6,6 +6,7 @@ input = input.strip
 systemtext = systemtext.sub("(noun or noun phrase)", input)
 puts systemtext
 
+ # or you can do it this way.
  # puts "Please enter a noun or noun phrase:"
  # input = gets.chomp
  # puts "The #{input} went to sea in a sturdy ship."
