@@ -12,3 +12,7 @@ Increment_03
 
 Increment_04a
 -created a class and several methods.<br> 
+
+Increment_04 final
+-cleaned up everything and embody the assignments instructions more.<br> 
+
