@@ -16,7 +16,7 @@ inputNoun = gets.chomp
 inputNoun = inputNoun.strip
 madlib["Noun"] = inputNoun
 systemtext = systemtext.sub("(noun)", madlib["Noun"])
-#puts systemtext
+puts systemtext
 #Adjective
 puts "Please enter an Adjective:"
 inputAdjective = gets.chomp 
