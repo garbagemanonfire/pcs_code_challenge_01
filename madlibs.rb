@@ -72,4 +72,10 @@ madlib.prompt()
 madlib.insert(systemtext1)
 madlib.insert(systemtext2)
 madlib.insert(systemtext3)
+<<<<<<< HEAD
 madlib.insert(systemtext4)
+=======
+
+
+		
+>>>>>>> 3eb2c7ab58acbb4ff94aadd982d6f85ca16a11b8
